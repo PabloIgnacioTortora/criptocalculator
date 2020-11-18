@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="/images/favicon.ico" type="image/x-icon">
+    <title>CryptoCalculator</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="spinner.css" />
+  </head>
+  <body>
+    <header>
+      <img class="logo" src="/images/Frame.svg" alt="" />
+      <h1>Crypto Calculator</h1>
+    </header>
+    <div id="spinner">
+      <div class="double-bounce1"></div>
+      <div class="double-bounce2"></div>
+    </div>
+    <main>
+      <div class="form">
+        <label for="">Ingrese su moneda</label>
+        <select class="select" name="moneda" id="moneda">
+          <option selected disabled hidden>Selecciona...</option>
+          <option value="USD">Dólar Americano</option>
+          <option value="EUR">Euro</option>
+          <option value="ARS">Peso Argentino</option>
+          <option value="CLP">Peso Chileno</option>
+        </select>
+        <br />
+        <label for="">Elija una criptomoneda</label>
+        <select class="select" name="criptomoneda" id="criptomoneda">
+          <option selected disabled hidden>Selecciona...</option>
+          <option value="BTC">Bitcoin</option>
+          <option value="ETH">Ethereum</option>
+          <option value="XRP">XRP</option>
+          <option value="USDT">Tether</option>
+          <option value="LINK">Chainlink</option>
+          <option value="HMR">Homeros</option>
+          <option value="BCH">Bitcoin Cash</option>
+          <option value="TITAN">TitanSwap</option>
+          <option value="HEX">HEX</option>
+          <option value="CRO">Crypto.com Coin</option>
+        </select>
+        <br />
+        <button id="btnCalcular">Calcular</button>
+        <br />
+      </div>
+    </main>
+
+    <div id="res" class="res"></div>
+    <script src="app.js"></script>
+  </body>
+</html>
